@@ -1,0 +1,26 @@
+{
+  "name": "first_fl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanand/first_fl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leanand/first_fl/issues"
+  },
+  "homepage": "https://github.com/leanand/first_fl#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "mysql": "^2.11.1",
+    "node-libcurl": "^1.0.0",
+    "optimist": "^0.6.1",
+    "sequelize": "^3.23.6"
+  }
+}
