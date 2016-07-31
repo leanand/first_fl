@@ -30,7 +30,6 @@ module.exports = function(userId, followsCount){
 				var bodyParsed = JSON.parse(body);
 			}
     		this.close();
-    		console.log("Fetched user list", bodyParsed.follows.nodes.length);
     		resolve(bodyParsed.follows.nodes);
 		});
 		

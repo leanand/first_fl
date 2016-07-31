@@ -44,14 +44,21 @@ module.exports = function(userName){
 				}else{
 					var followsCount = 0;
 				}
+				this.close();
+	    		var payload = {
+	    			requiredEmail : requiredEmail,
+	    			followsCount: followsCount,
+	    			id: bodyParsed.user.id
+	    		};
+    			resolve(payload);
+			}else{
+				var payload = {
+	    			requiredEmail : null,
+	    			followsCount: 0,
+	    			id: 0
+	    		};
+    			resolve(payload);
 			}
-    		this.close();
-    		var payload = {
-    			requiredEmail : requiredEmail,
-    			followsCount: followsCount,
-    			id: bodyParsed.user.id
-    		};
-    		resolve(payload);
 		});
 		curl.on( 'error', function(){
 			this.close();

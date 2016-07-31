@@ -7,7 +7,7 @@ dbConfig = JSON.parse(dbConfig);
 GLOBAL.sequelizeDB = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.password);
 
 module.exports = function(){
-  console.log("Checking database connection");
+  console.log("Checking database Connection")
   return sequelizeDB.authenticate().then(function(err) {
     console.log('Connection has been established successfully.'.blue);
   })
